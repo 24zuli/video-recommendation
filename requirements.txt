@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2
+alembic
+python-dotenv
+pydantic
+tensorflow
+scikit-learn
+numpy
+pandas
+requests
+torch
