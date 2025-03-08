@@ -4,10 +4,7 @@ A sophisticated recommendation system that suggests personalized video content b
 
 
 ##  🎥 Project video
-<video width="600" controls>
-  <source src="VideoRecommandation.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Watch the video]([https://github.com/24zuli/video-recommendation/issues/1#issue-2905009252])
 
 
 ## 🎯 Project Overview
