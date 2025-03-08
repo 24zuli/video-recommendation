@@ -4,7 +4,15 @@ A sophisticated recommendation system that suggests personalized video content b
 
 
 ##  🎥 Project video
-https://github.com/24zuli/video-recommendation/issues/1#issue-2905009252
+
+https://github.com/user-attachments/assets/d5497899-1f55-419f-b7fc-3573474f51e7
+
+
+## 🚀 Postman collection
+
+https://drive.google.com/file/d/1nOSpYOauYlNqFgmyJe_FYTRZz3ICHEKz/view?usp=sharing
+
+
 
 
 ## 🎯 Project Overview
