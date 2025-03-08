@@ -5,7 +5,7 @@ from app.services.fetch_data import fetch_and_store_videos
 
 router = APIRouter()
 
-@router.get("/fetch-videos")  # ✅ No need to repeat "/api"
+@router.get("/fetch-videos") 
 def fetch_videos(db: Session = Depends(get_db)):
     """
     Fetch videos from the external API and store them in the database.

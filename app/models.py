@@ -9,7 +9,6 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String, unique=True, nullable=False)
 
-    # Relationship to interactions
     interactions = relationship("UserInteraction", back_populates="user")
 
 
@@ -19,17 +18,15 @@ class Video(Base):
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, nullable=False)
     category = Column(String, nullable=False)
-    video_metadata = Column(JSON, nullable=True)  # JSON column for metadata storage
+    video_metadata = Column(JSON, nullable=True) 
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
 
-    # 🔹 Add missing fields from API response
-    view_count = Column(Integer, nullable=True)  # ✅ Added view_count to match API response
+    view_count = Column(Integer, nullable=True) 
     upvote_count = Column(Integer, nullable=True)
     comment_count = Column(Integer, nullable=True)
     video_link = Column(String, nullable=True)
     thumbnail_url = Column(String, nullable=True)
 
-    # Relationship to interactions
     interactions = relationship("UserInteraction", back_populates="video")
 
 
@@ -42,6 +39,5 @@ class UserInteraction(Base):
     interaction_type = Column(String, nullable=False)  # e.g., "like", "view", "inspire"
     timestamp = Column(DateTime, default=datetime.datetime.utcnow)
 
-    # Relationships
     user = relationship("User", back_populates="interactions")
     video = relationship("Video", back_populates="interactions")
