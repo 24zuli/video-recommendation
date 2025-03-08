@@ -15,12 +15,10 @@
 
 # # # ✅ Register the router with prefix "/api"
 # # app.include_router(data_fetch.router, prefix="/api", tags=["Data Fetch"])
-
 from fastapi import FastAPI
-from app.routes import recommendations, data_fetch, interactions
-from app.database import engine, Base
-from app.recommendation.ml_recommendations import router as ml_recommendations_router
+from app.routes import recommendations, data_fetch, interactions, recommendation_engine  # ✅ FIXED IMPORT
 
+from app.database import engine, Base
 
 # ✅ Ensure database tables are created
 Base.metadata.create_all(bind=engine)
@@ -31,7 +29,7 @@ app = FastAPI()
 app.include_router(recommendations.router, prefix="/api", tags=["Recommendations"])
 app.include_router(data_fetch.router, prefix="/api", tags=["Data Fetch"])
 app.include_router(interactions.router, prefix="/api", tags=["User Interactions"])
-app.include_router(ml_recommendations_router, prefix="/api")  
+app.include_router(recommendation_engine.router, prefix="/api", tags=["Recommendation Engine"])  # ✅ FIXED ROUTE
 
 @app.get("/")
 def home():
