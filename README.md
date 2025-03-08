@@ -27,7 +27,7 @@ This project implements a video recommendation algorithm that:
 
    ```bash
    git clone <repository-url>
-   cd video-recommendation-engine
+   cd video-recommendation
    ```
 
 2. **Set Up Virtual Environment**
