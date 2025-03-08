@@ -5,7 +5,7 @@ A sophisticated recommendation system that suggests personalized video content b
 
 ##  🎥 Project video
 
-https://github.com/user-attachments/assets/d5497899-1f55-419f-b7fc-3573474f51e7
+https://github.com/user-attachments/assets/744b94c2-ac4e-4db5-ae6f-ca1f3e3f4263
 
 
 ## 🚀 Postman collection
